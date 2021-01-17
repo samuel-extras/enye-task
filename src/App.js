@@ -94,7 +94,7 @@ class App extends Component {
           style={{ alignItems: "left", textAlign: "left", paddingLeft: "10px" }}
         >
           <img
-            alt
+            alt=""
             width="140px"
             src="http://345451-1068034-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2019/09/556x300_white.png"
           />
