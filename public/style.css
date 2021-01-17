@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.search {
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 150px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+  .card-list {
+      margin: auto auto;
+        width: 88vw;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax( 420px, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem
+    }
+
+.card {
+  height: 280px;
+  min-width: 420px;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  background-color: rgb(59, 55, 55)(141, 125, 125);
+}
+
+.card .face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border-radius: 20px !important;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px) !important;
+  transform-style: preserve-3d !important;
+  transition: 1s !important;
+}
+.card:hover .face.front{
+ transform: rotateY(180deg);
+}
+.card .face.back{
+ transform: rotateY(180deg);
+}
+ .card:hover .face.back{
+ transform: rotateY(360deg);
+} 
+.card .name {
+  position: absolute;
+  left: 40px;
+  top: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+.card .username {
+  position: absolute;
+  right: 40px;
+  top: 30px;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 20px;
+    color: #fff;
+
+}
+.card .card-name {
+  position: absolute;
+  left: 40px;
+  top: 165px;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-style: italic;
+    color: #fff;
+
+}
+.card .payment-method {
+  position: absolute;
+  right: 40px;
+  top: 160px;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-style: italic;
+    color: #fff;
+
+}
+.card .domain {
+  position: absolute;
+  left: 30px;
+  top: 120px;
+  font-weight: 400;
+  font-style: italic;
+    color: #fff;
+
+}
+.card .url {
+  position: absolute;
+  left: 30px;
+  top: 160px;
+  font-weight: 400;
+  font-style: italic;
+    color: #fff;
+
+}
+.card .mac {
+  position: absolute;
+  left: 30px;
+  top: 200px;
+  font-weight: 400;
+  font-style: italic;
+    color: #fff;
+
+}
+.card .last-login {
+  position: absolute;
+  left: 30px;
+  top: 240px;
+  font-weight: 400;
+  font-style: italic;
+    color: #fff;
+
+}
+.card .card-no {
+  position: absolute;
+  left: 40px;
+  top: 130px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 6px;
+  text-shadow: 0 2px 1px #000;
+  font-family: "Orbitron", sans-serif;
+    color: #fff;
+
+}
+.card .email {
+  position: absolute;
+  left: 40px;
+  bottom: 65px;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 2px;
+    color: #fff;
+
+}
+.card .phone {
+  position: absolute;
+  right: 40px;
+  bottom: 65px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2px;
+    color: #fff;
+
+}
+.card .location {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  line-height: 1em;
+  text-align: right;
+    color: #fff;
+
+}
+
+.card .blackbar {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  height: 60px;
+  background: #000;
+
+}
+.card .gender {
+  position: absolute;
+  top: 70px;
+  right: 40px;
+  font-size: 20px;
+  font-weight: 400;
+    color: #fff;
+
+}
+.card img{
+  position: absolute;
+  top: 60px;
+  left: 60px;
+}
