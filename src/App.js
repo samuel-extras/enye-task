@@ -25,7 +25,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("http://api.enye.tech/v1/challenge/records")
+    fetch("https://cors-anywhere.herokuapp.com/http://api.enye.tech/v1/challenge/records")
       .then((response) => response.json())
       .then((users) => users.records.profiles)
       .then((data) => this.setState({ users: data }));
