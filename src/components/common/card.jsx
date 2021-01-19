@@ -29,7 +29,7 @@ const Card = (props) => {
           <h5 className="location">
             <i className="fas fa-map-marker-alt"></i> &nbsp;
             <span>
-              Latitude:&nbsp; <span>{props.user.Latitude}</span> &nbs; &nbsp;Longitude:&nbsp;{" "}
+              Latitude:&nbsp; <span>{props.user.Latitude}</span> &nbsp; &nbsp;Longitude:&nbsp;{" "}
               <span>{props.user.Longitude}</span>
             </span>
           </h5>
